@@ -43,8 +43,6 @@ class Solution:
         
         return len(factors)
 
-        return find_prime_factor(nums)
-
 #Testing
 solution = Solution()
 test_cases = [

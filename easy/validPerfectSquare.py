@@ -46,6 +46,7 @@ tests_cases = [
     (16, True),
     (14, False)
 ]
+
 for num, expected in tests_cases:
     result = solution.isPerfectSquare(num)
     print(f"Input: {num}, Expected: {expected}, Got: {result}, {'Passed' if result == expected else 'Failed'}")

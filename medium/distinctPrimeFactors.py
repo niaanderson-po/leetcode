@@ -22,6 +22,8 @@ The product of all the elements in nums is: 2 * 4 * 8 * 16 = 1024 = 210.
 There is 1 distinct prime factor so we return 1.
 """
 
+#Approach:
+
 class Solution:
     def distinctPrimeFactors(self, nums: list[int]) -> int:
         def find_prime_factor(n):
@@ -44,6 +46,7 @@ class Solution:
         return len(factors)
 
 #Testing
+
 solution = Solution()
 test_cases = [
     ([2,4,3,7,10,6], 4),

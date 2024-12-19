@@ -12,7 +12,7 @@ Input: s = ["H","a","n","n","a","h"]
 Output: ["h","a","n","n","a","H"]
 """
 
-#Approach Two Pointers, Iteration
+#Approach: Two Pointers, Iteration
 
 class Solution:
     def reverseString(self, s: list[str]) -> None:
@@ -28,7 +28,8 @@ class Solution:
             right -= 1
         
     
-#Approach Two Pointers, Recursion
+#Approach: Two Pointers, Recursion
+
 class Solution2:
     def reverseStringRecursively(self, s: list[str]) -> None:
         """
@@ -47,6 +48,7 @@ class Solution2:
         
     
 #Testing
+
 solution = Solution()
 solution2 = Solution2()
 
@@ -55,14 +57,14 @@ test_cases = [
     (["H","a","n","n","a","h"], ["h","a","n","n","a","H"])
 ]
 
-print("Iterative Test:", end = "\n" * 2)
+print("Iterative Test:")
 for original, expected in test_cases:
     s = original.copy()
     solution.reverseString(s)
-    print(f"Input: {original}, Expected: {expected}, Got: {s}, {'Passed' if s == expected else 'Failed'}", end="\n" * 2)
+    print(f"Input: {original}, Expected: {expected}, Got: {s}, {'Passed' if s == expected else 'Failed'}")
 
-print("Recursive Test:" )
+print("Recursive Test:")
 for original, expected in test_cases:
     s = original.copy()
     solution2.reverseStringRecursively(s)
-    print(f"Input: {original}, Expected: {expected}, Got: {s}, {'Passed' if s == expected else 'Failed'}", end="\n" * 2)
+    print(f"Input: {original}, Expected: {expected}, Got: {s}, {'Passed' if s == expected else 'Failed'}")

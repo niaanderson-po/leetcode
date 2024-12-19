@@ -35,6 +35,8 @@ Thus, the final modified array is [2,1,1,3].
 Note that there are other ways to obtain the same resultant array.
 """
 
+#Approach: 
+
 class Solution:
     def replaceNonCoprimes(self, nums: list[int]) -> list[int]:
         def gcd(a, b):
